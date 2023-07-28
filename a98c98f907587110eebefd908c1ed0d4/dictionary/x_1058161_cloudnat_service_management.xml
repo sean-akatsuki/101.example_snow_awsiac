@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="323d507d07587110eebefd908c1ed048" label="Service Management" max_length="40" name="x_1058161_cloudnat_service_management" type="collection">
+        <element choice="1" label="操作" max_length="40" name="action" type="choice">
+            <choice/>
+        </element>
         <element label="承認実施者" max_length="40" name="approved_by" type="string"/>
         <element label="承認・拒否日付" max_length="40" name="approved_rejected_date" type="glide_date"/>
         <element label="指定承認者" max_length="32" name="ask_for_approver" reference="sys_user" type="reference"/>
@@ -7,6 +10,9 @@
         <element label="承認期待期日" max_length="40" name="dead_line" type="glide_date"/>
         <element label="申請者" max_length="40" name="requester" type="string"/>
         <element label="申請ID" max_length="10" name="request_id" type="string"/>
+        <element choice="1" label="サービス" max_length="40" name="sevice" type="choice">
+            <choice/>
+        </element>
         <element choice="3" default="1" label="リクエストステータス" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Ask for approval" sequence="10" value="1"/>
