@@ -6,9 +6,9 @@
         <description/>
         <field/>
         <global>true</global>
-        <isolate_script>false</isolate_script>
+        <isolate_script>true</isolate_script>
         <messages/>
-        <name>CSOnLoad</name>
+        <name>CS_OnLoad</name>
         <order/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
@@ -21,10 +21,21 @@
 		g_form.setReadonly('approved_by', true); //承認実施者
 		g_form.setReadonly('approved_rejected_date', true); //承認実施者
 		
-		g_form.setValue('requester', g_user.getEmail());//申請者, g_user.getFullName()
-		g_form.setReadonly('requester', true); //申請者
+		var ga = new GlideAjax('SI_UserDetail');//name of script include
+		ga.addParam('sysparm_name', 'getDetailByUname');//name of function on script include
+		ga.addParam('sysparm_user', g_user.userName);//name of field on form triggering call
+		ga.getXML(EmailLookup); // Always try to use asynchronous call
+		
 	}
    
+}
+
+// Callback function to process the response returned from the server
+function EmailLookup(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	var result = JSON.parse(answer);
+	g_form.setValue('requester',result.email);//申請者
+	g_form.setReadonly('requester', true); //申請者
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -32,15 +43,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>66e76626075c3110eebefd908c1ed07b</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>CSOnLoad</sys_name>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>CS_OnLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
         <sys_policy/>
         <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
         <sys_update_name>sys_script_client_66e76626075c3110eebefd908c1ed07b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-31 03:29:58</sys_updated_on>
+        <sys_updated_on>2023-07-31 07:46:42</sys_updated_on>
         <table>x_1058161_cloudnat_service_management</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

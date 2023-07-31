@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1058161_cloudnat.SI_AWSIaController</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SI_AWSIaController</name>
+        <script><![CDATA[var SI_AWSIaController = Class.create();
+SI_AWSIaController.prototype = {
+    initialize: function() {
+    },
+	callRESTwithParams: function(){
+		var service = this.getParameter('service');
+		var action = this.getParameter('action');
+		// Create an empty RESTMessageV2 object
+		var getQuote = new sn_ws.RESTMessageV2();
+		// Set the endpoint
+		getQuote.setEndpoint('https://exie64gecw564iphahlyccnamu0cuzet.lambda-url.ap-northeast-1.on.aws');
+		// Set the HTTP method (get, post, put, patch, delete)
+		getQuote.setHttpMethod('get');
+		// Set HTTP Query Parameters
+		getQuote.setQueryParameter('service', service);
+		getQuote.setQueryParameter('action',action);
+		// Set values for endpoint variables
+		//getQuote.setStringParameterNoEscape('symbol', current.short_description);
+		var response = getQuote.execute();
+		
+		var result = { //Create an object to store the User data
+            reponse_code: response.getStatusCode(),
+            reponse_body: response.getBody()
+        };
+		
+		return JSON.stringify(result);
+	},
+    type: 'SI_AWSIaController'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 07:11:21</sys_created_on>
+        <sys_id>6529b76e07507110eebefd908c1ed072</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>SI_AWSIaController</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_script_include_6529b76e07507110eebefd908c1ed072</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 07:45:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

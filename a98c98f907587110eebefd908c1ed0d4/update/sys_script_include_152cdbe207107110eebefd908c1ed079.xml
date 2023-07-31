@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1058161_cloudnat.SI_UserDetail</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>SI_UserDetail</name>
+        <script><![CDATA[var SI_UserDetail = Class.create();
+SI_UserDetail.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    type: 'SI_UserDetail',
+	getDetailByUname: function(){
+		var user_name = this.getParameter('sysparm_user');
+		//gs.info('====',user_name);
+		var user = new GlideRecord('sys_user');
+		var result = { //Create an object to store the User data
+            user_name: "",
+            email: "",
+			user_id: ""
+        };
+		user.addQuery('user_name',user_name);
+		user.query();
+		user.next();
+		//gs.info('====',user);
+		
+		result.user_name = user.user_name.toString();
+		result.email = user.email.toString();
+		result.user_id = user.sys_id.toString();
+		
+		return JSON.stringify(result);
+	}
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 05:12:12</sys_created_on>
+        <sys_id>152cdbe207107110eebefd908c1ed079</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>SI_UserDetail</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_script_include_152cdbe207107110eebefd908c1ed079</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 07:46:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

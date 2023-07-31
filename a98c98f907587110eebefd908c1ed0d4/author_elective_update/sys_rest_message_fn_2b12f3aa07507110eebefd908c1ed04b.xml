@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>trigger</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>AWSIacTrigger [ trigger ]</qualified_name>
+        <rest_endpoint> https://exie64gecw564iphahlyccnamu0cuzet.lambda-url.ap-northeast-1.on.aws/ </rest_endpoint>
+        <rest_message display_value="AWSIacTrigger">07e17bea07507110eebefd908c1ed062</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 06:34:52</sys_created_on>
+        <sys_id>2b12f3aa07507110eebefd908c1ed04b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>trigger</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_rest_message_fn_2b12f3aa07507110eebefd908c1ed04b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 06:38:40</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</application>
+        <file_path/>
+        <instance_id>81a9d2a0dbc6d3c0536ad5b0cf9619e0</instance_id>
+        <instance_name>dev58858</instance_name>
+        <name>sys_rest_message_fn_2b12f3aa07507110eebefd908c1ed04b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>trigger</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>AWSIacTrigger [ trigger ]</qualified_name><rest_endpoint> https://exie64gecw564iphahlyccnamu0cuzet.lambda-url.ap-northeast-1.on.aws/ </rest_endpoint><rest_message display_value="AWSIacTrigger">07e17bea07507110eebefd908c1ed062</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 06:34:52</sys_created_on><sys_id>2b12f3aa07507110eebefd908c1ed04b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>trigger</sys_name><sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package><sys_policy/><sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope><sys_update_name>sys_rest_message_fn_2b12f3aa07507110eebefd908c1ed04b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 06:38:40</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-323257388</payload_hash>
+        <record_name>trigger</record_name>
+        <reverted_from/>
+        <source>d10dd0b507187110eebefd908c1ed039</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 06:38:40</sys_created_on>
+        <sys_id>d3f27b2e07507110eebefd908c1ed0a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189aaab99a60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 06:38:40</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>9bf27b2e815071104d2adc3b7b6475a2</update_guid>
+        <update_guid_history>9bf27b2e815071104d2adc3b7b6475a2:-323257388,e8e237aada507110b154de43f1551698:-702098503,6b123feaf0507110599dc9a510ab8e6c:-161676361</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 07:05:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>0421964881444fa88f5251fd11a76429</sys_id>
+        <sys_metadata>2b12f3aa07507110eebefd908c1ed04b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>trigger</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_scope_delete display_value="">013ac8a5bd1046b4800382eebdc10b10</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_2b12f3aa07507110eebefd908c1ed04b</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_2b12f3aa07507110eebefd908c1ed04b">d3f27b2e07507110eebefd908c1ed0a3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 07:05:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
