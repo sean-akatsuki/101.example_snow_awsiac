@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="チケット更新" section_id="43ec9e2a071c3110eebefd908c1ed053" sys_domain="global" table="x_1058161_cloudnat_service_management" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approved_by</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-31 00:22:40</sys_created_on>
+            <sys_id>afec9e2a071c3110eebefd908c1ed0bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-31 00:22:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-31 00:22:40</sys_created_on>
+            <sys_id>23ec9e2a071c3110eebefd908c1ed0be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-31 00:22:40</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approved_rejected_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-31 00:22:40</sys_created_on>
+            <sys_id>a3ec9e2a071c3110eebefd908c1ed0be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-31 00:22:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-31 00:22:40</sys_created_on>
+            <sys_id>27ec9e2a071c3110eebefd908c1ed0be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-31 00:22:40</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comment_his</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-31 00:22:40</sys_created_on>
+            <sys_id>a7ec9e2a071c3110eebefd908c1ed0be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-31 00:22:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>チケット更新</caption>
+            <header>false</header>
+            <name>x_1058161_cloudnat_service_management</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-07-31 00:22:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43ec9e2a071c3110eebefd908c1ed053</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1058161_cloudnat_service_management</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+            <sys_update_name>sys_ui_section_43ec9e2a071c3110eebefd908c1ed053</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-07-31 00:22:38</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</application>
+        <file_path/>
+        <instance_id>81a9d2a0dbc6d3c0536ad5b0cf9619e0</instance_id>
+        <instance_name>dev58858</instance_name>
+        <name>sys_ui_section_43ec9e2a071c3110eebefd908c1ed053</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="チケット更新" section_id="43ec9e2a071c3110eebefd908c1ed053" sys_domain="global" table="x_1058161_cloudnat_service_management" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>approved_by</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 00:22:40</sys_created_on><sys_id>afec9e2a071c3110eebefd908c1ed0bd</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 00:22:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 00:22:40</sys_created_on><sys_id>23ec9e2a071c3110eebefd908c1ed0be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 00:22:40</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>approved_rejected_date</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 00:22:40</sys_created_on><sys_id>a3ec9e2a071c3110eebefd908c1ed0be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 00:22:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 00:22:40</sys_created_on><sys_id>27ec9e2a071c3110eebefd908c1ed0be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 00:22:40</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>comment_his</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 00:22:40</sys_created_on><sys_id>a7ec9e2a071c3110eebefd908c1ed0be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="チケット更新" display_value="チケット更新" name="x_1058161_cloudnat_service_management" sys_domain="global" view="Default view">43ec9e2a071c3110eebefd908c1ed053</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 00:22:40</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>チケット更新</caption><header>false</header><name>x_1058161_cloudnat_service_management</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-31 00:22:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>43ec9e2a071c3110eebefd908c1ed053</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1058161_cloudnat_service_management</sys_name><sys_overrides/><sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package><sys_policy/><sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope><sys_update_name>sys_ui_section_43ec9e2a071c3110eebefd908c1ed053</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-31 00:22:38</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1383656506</payload_hash>
+        <record_name>Service Management</record_name>
+        <reverted_from/>
+        <source>d10dd0b507187110eebefd908c1ed039</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 00:22:40</sys_created_on>
+        <sys_id>a7ec9e2a071c3110eebefd908c1ed0c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189a9535efe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 00:22:40</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>2fec9e2aff1c31102c8b1f9c12402cbf</update_guid>
+        <update_guid_history>2fec9e2aff1c31102c8b1f9c12402cbf:-1383656506</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 00:23:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>150bf3e596bd4dc282b94395b7e3d861</sys_id>
+        <sys_metadata>43ec9e2a071c3110eebefd908c1ed053</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>チケット更新</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_parent display_value="Service Management">323d507d07587110eebefd908c1ed048</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_scope_delete display_value="">013ac8a5bd1046b4800382eebdc10b10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_43ec9e2a071c3110eebefd908c1ed053</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_43ec9e2a071c3110eebefd908c1ed053">a7ec9e2a071c3110eebefd908c1ed0c0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 00:23:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

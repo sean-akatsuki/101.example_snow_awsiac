@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CSOnSubmit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	if(g_form.isNewRecord()){//レコード新規の場合
+		if (g_form.getValue('service')=='' || g_form.getValue('action')==''){
+			g_form.addErrorMessage('サービス・アクションの入力は必須です！');
+			return false;
+		}
+	
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-31 01:10:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bda76226075c3110eebefd908c1ed056</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CSOnSubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_script_client_bda76226075c3110eebefd908c1ed056</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-31 01:38:01</sys_updated_on>
+        <table>x_1058161_cloudnat_service_management</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

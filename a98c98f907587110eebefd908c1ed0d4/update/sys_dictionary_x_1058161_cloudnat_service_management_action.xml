@@ -13,7 +13,7 @@
         <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>操作</column_label>
+        <column_label>アクション</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -52,13 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-07-28 08:58:32</sys_created_on>
-        <sys_name>操作</sys_name>
+        <sys_name>アクション</sys_name>
         <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
         <sys_policy/>
         <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
         <sys_update_name>sys_dictionary_x_1058161_cloudnat_service_management_action</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-28 08:59:02</sys_updated_on>
+        <sys_updated_on>2023-07-31 00:59:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

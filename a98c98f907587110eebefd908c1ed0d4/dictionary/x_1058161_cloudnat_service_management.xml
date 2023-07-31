@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="323d507d07587110eebefd908c1ed048" label="Service Management" max_length="40" name="x_1058161_cloudnat_service_management" type="collection">
-        <element choice="1" label="操作" max_length="40" name="action" type="choice">
-            <choice/>
+        <element choice="1" label="アクション" max_length="40" name="action" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="停止" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="起動" sequence="20" value="20"/>
+            </choice>
         </element>
         <element label="承認実施者" max_length="40" name="approved_by" type="string"/>
         <element label="承認・拒否日付" max_length="40" name="approved_rejected_date" type="glide_date"/>
-        <element label="指定承認者" max_length="32" name="ask_for_approver" reference="sys_user" type="reference"/>
+        <element label="指定承認者" max_length="32" name="ask_for_approver" reference="sys_user" reference_qual="roles=x_1058161_cloudnat.approver^EQ" reference_qual_condition="roles=x_1058161_cloudnat.approver^EQ" type="reference"/>
         <element label="コメント" max_length="4000" name="comment_his" type="journal"/>
         <element label="承認期待期日" max_length="40" name="dead_line" type="glide_date"/>
         <element label="申請者" max_length="40" name="requester" type="string"/>
-        <element label="申請ID" max_length="10" name="request_id" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="申請ID" max_length="40" name="request_id" read_only="true" type="string" use_dynamic_default="true"/>
         <element choice="1" label="サービス" max_length="40" name="sevice" type="choice">
-            <choice/>
-        </element>
-        <element choice="3" default="1" label="リクエストステータス" max_length="40" name="status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Ask for approval" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="Approved-JobOnRunning" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Approved-JobCompleted" sequence="30" value="3"/>
-                <element inactive_on_update="false" label="Rejected" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="データベース" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="BackEnd" sequence="20" value="20"/>
+                <element inactive_on_update="false" label="FrontEnd" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="All" sequence="40" value="40"/>
+            </choice>
+        </element>
+        <element choice="3" default="10" label="リクエストステータス" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ask for approval" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="Approved-JobOnRunning" sequence="20" value="20"/>
+                <element inactive_on_update="false" label="Approved-JobCompleted" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="Rejected" sequence="40" value="40"/>
             </choice>
         </element>
         <index name="index">
