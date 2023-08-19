@@ -21,6 +21,32 @@ AWS Lambda関数(Infrastructure As Code)でアプリケーションの基盤施�
 |approved_by|String|承認実施者|
 |approved_rejected_date|Date|承認・拒否日付|
 |comment_his|Journal|コメント|
+
+Choice型設定  
+#### サービス  
+- データベース
+- FrontEnd
+- BackEnd
+- All
+#### アクション
+- 起動
+- 停止
+#### ステータス
+- Ask for Approval
+- Approved-JobOnRunning
+- Approved-JobSucceed
+- Approved-JobFailed
+- Cancel
+- Rejected
+
 ## 2.2 ステータス遷移図  
 ![cloudIacServicenow](https://github.com/sean-akatsuki/101.example_snow_awsiac/assets/18321490/78fa7ec5-3c9e-48cb-8d6d-fa26ecc1f113)
+
+## 2.3 UI  
+#### Appメニュー  
+![cloudIac_app](https://github.com/sean-akatsuki/101.example_snow_awsiac/assets/18321490/5210c63d-9652-4560-bcbc-b736c279cb59)
+
+#### Form  
+![cloudIac_form](https://github.com/sean-akatsuki/101.example_snow_awsiac/assets/18321490/46080593-59d2-4fd9-8af5-283374a07fde)
+
 
