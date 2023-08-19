@@ -14,6 +14,8 @@
    //Type appropriate comment here, and begin script below
 	if(g_form.isNewRecord()){//レコード新規の場合
 		if (g_form.getValue('service')=='' || g_form.getValue('action')==''){
+			//alert(g_form.getValue('service'));
+			//alert(g_form.getValue('action'));
 			g_form.addErrorMessage('サービス・アクションの入力は必須です！');
 			return false;
 		}
@@ -27,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bda76226075c3110eebefd908c1ed056</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CS_OnSubmit</sys_name>
         <sys_overrides/>
         <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
@@ -35,7 +37,7 @@
         <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
         <sys_update_name>sys_script_client_bda76226075c3110eebefd908c1ed056</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-31 07:46:53</sys_updated_on>
+        <sys_updated_on>2023-08-01 02:41:05</sys_updated_on>
         <table>x_1058161_cloudnat_service_management</table>
         <type>onSubmit</type>
         <ui_type>10</ui_type>

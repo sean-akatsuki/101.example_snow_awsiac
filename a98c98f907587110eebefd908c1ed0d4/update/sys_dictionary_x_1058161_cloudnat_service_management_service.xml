@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="sevice" table="x_1058161_cloudnat_service_management">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="service" table="x_1058161_cloudnat_service_management">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -26,7 +26,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>sevice</element>
+        <element>service</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-28 08:58:31</sys_created_on>
+        <sys_created_on>2023-08-01 02:36:05</sys_created_on>
         <sys_name>サービス</sys_name>
         <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
         <sys_policy/>
         <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
-        <sys_update_name>sys_dictionary_x_1058161_cloudnat_service_management_sevice</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1058161_cloudnat_service_management_service</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-31 00:59:10</sys_updated_on>
+        <sys_updated_on>2023-08-01 02:38:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

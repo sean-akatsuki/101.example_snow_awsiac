@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cloudnative_flow</internal_name>
+        <label_cache>[{"name":"c3c515b5-c29f-4d23-afaf-34e69f153189.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.5bd02c0b07d0b110eebefd908c1ed09a}}","label":"cloudnative_approver","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Service Management Record","reference":"x_1058161_cloudnat_service_management","reference_display":"Service Management","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛Service Management Record➛リクエストステータス","reference":"","reference_display":"リクエストステータス","type":"choice","base_type":"choice","parent_table_name":"x_1058161_cloudnat_service_management","column_name":"status","choices":[{"label":"Ask for approval","used":false,"image":"","rawLabel":"Ask for approval","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"Approved-JobOnRunning","used":false,"image":"","rawLabel":"Approved-JobOnRunning","selected":false,"missing":false,"reference":false,"value":"20","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"Approved-JobCompleted","used":false,"image":"","rawLabel":"Approved-JobCompleted","selected":false,"missing":false,"reference":false,"value":"30","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"Rejected","used":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"reference":false,"value":"40","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"Cancel By User","used":false,"image":"","rawLabel":"Cancel By User","selected":false,"missing":false,"reference":false,"value":"50","parameters":{"name":"x_1058161_cloudnat_service_management"}}]},{"name":"Created or Updated_1.current.service","label":"Trigger - Record Created or Updated➛Service Management Record➛サービス","reference":"","reference_display":"サービス","type":"choice","base_type":"choice","parent_table_name":"x_1058161_cloudnat_service_management","column_name":"service","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"データベース","used":false,"image":"","rawLabel":"データベース","selected":false,"missing":false,"reference":false,"value":"10","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"Backend","used":false,"image":"","rawLabel":"Backend","selected":false,"missing":false,"reference":false,"value":"20","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"Frontend","used":false,"image":"","rawLabel":"Frontend","selected":false,"missing":false,"reference":false,"value":"30","parameters":{"name":"x_1058161_cloudnat_service_management"}},{"label":"All","used":false,"image":"","rawLabel":"All","selected":false,"missing":false,"reference":false,"value":"40","parameters":{"name":"x_1058161_cloudnat_service_management"}}]}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>CloudNative Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:11:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>002d04470790b110eebefd908c1ed0e8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>CloudNative Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_hub_flow_002d04470790b110eebefd908c1ed0e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=002d04470790b110eebefd908c1ed0e8^sys_idNOT IN6400188b0790b110eebefd908c1ed0b5"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>6400188b0790b110eebefd908c1ed0b5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:19</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6400188b0790b110eebefd908c1ed0b5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6400188b0790b110eebefd908c1ed0b5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>2000188b0790b110eebefd908c1ed0b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6400188b0790b110eebefd908c1ed0b5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>2800188b0790b110eebefd908c1ed0b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <value>always</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6400188b0790b110eebefd908c1ed0b5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>e000188b0790b110eebefd908c1ed0b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <value>x_1058161_cloudnat_service_management</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=6400188b0790b110eebefd908c1ed0b5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=002d04470790b110eebefd908c1ed0e8^sys_idNOT IN002d04470790b110eebefd908c1ed0ea"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>002d04470790b110eebefd908c1ed0e8</id>
+        <name>CloudNative Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:11:20</sys_created_on>
+        <sys_id>002d04470790b110eebefd908c1ed0ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:11:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=002d04470790b110eebefd908c1ed0ea"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=002d04470790b110eebefd908c1ed0e8^sys_idNOT IN2000188b0790b110eebefd908c1ed094,a400188b0790b110eebefd908c1ed08f,e400188b0790b110eebefd908c1ed097"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</model>
+        <model_id>002d04470790b110eebefd908c1ed0e8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>2000188b0790b110eebefd908c1ed094</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</model>
+        <model_id>002d04470790b110eebefd908c1ed0e8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>a400188b0790b110eebefd908c1ed08f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</model>
+        <model_id>002d04470790b110eebefd908c1ed0e8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>e400188b0790b110eebefd908c1ed097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=002d04470790b110eebefd908c1ed0e8^sys_idNOT IN3fc1a4cb07d0b110eebefd908c1ed065,b0ffde970798f110eebefd908c1ed066,cb2c34870754b110eebefd908c1ed016"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment>Approval開始</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <order>2</order>
+        <parent_ui_id>40902001-d63b-4d58-b73f-229170079eec</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>3fc1a4cb07d0b110eebefd908c1ed065</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <ui_id>c3c515b5-c29f-4d23-afaf-34e69f153189</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3fc1a4cb07d0b110eebefd908c1ed065"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3fc1a4cb07d0b110eebefd908c1ed065</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>3bc1a4cb07d0b110eebefd908c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <value>x_1058161_cloudnat_service_management</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3fc1a4cb07d0b110eebefd908c1ed065</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>77c1a4cb07d0b110eebefd908c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3fc1a4cb07d0b110eebefd908c1ed065</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>b3c1a4cb07d0b110eebefd908c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <value>status</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3fc1a4cb07d0b110eebefd908c1ed065</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 05:58:22</sys_created_on>
+        <sys_id>fe53744f0714b110eebefd908c1ed09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 05:58:22</sys_updated_on>
+        <value>comment_his</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3fc1a4cb07d0b110eebefd908c1ed065"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>3fc1a4cb07d0b110eebefd908c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>7fc1a4cb07d0b110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.5bd02c0b07d0b110eebefd908c1ed09a}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>3fc1a4cb07d0b110eebefd908c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>37c1a4cb07d0b110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>3fc1a4cb07d0b110eebefd908c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>bbc1a4cb07d0b110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>3fc1a4cb07d0b110eebefd908c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 05:58:22</sys_created_on>
+        <sys_id>b253744f0714b110eebefd908c1ed091</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 05:58:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3fc1a4cb07d0b110eebefd908c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>f7c1a4cb07d0b110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>3fc1a4cb07d0b110eebefd908c1ed065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>33c1a4cb07d0b110eebefd908c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3fc1a4cb07d0b110eebefd908c1ed065"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3fc1a4cb07d0b110eebefd908c1ed065"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <order>6</order>
+        <parent_ui_id>f23a6614-9825-4777-9a6b-5bc10c090170</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>b0ffde970798f110eebefd908c1ed066</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <ui_id>d143fa53-3246-4146-9f41-4a8798c607b7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b0ffde970798f110eebefd908c1ed066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b0ffde970798f110eebefd908c1ed066</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>b4ffde970798f110eebefd908c1ed069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:31:18</sys_updated_on>
+        <value>x_1058161_cloudnat_service_management</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b0ffde970798f110eebefd908c1ed066</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>bcffde970798f110eebefd908c1ed068</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <value>status=40^approved_rejected_date=fd-scripted^approved_by=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b0ffde970798f110eebefd908c1ed066"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b0ffde970798f110eebefd908c1ed066</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>3cffde970798f110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:31:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b0ffde970798f110eebefd908c1ed066</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>b0ffde970798f110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:31:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b0ffde970798f110eebefd908c1ed066</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>78ffde970798f110eebefd908c1ed068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:31:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b0ffde970798f110eebefd908c1ed066^sys_idNOT INb4ffde970798f110eebefd908c1ed067"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>b0ffde970798f110eebefd908c1ed066</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"approved_by":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027コメントをご参考\u0027;","savedValue":""},"approved_rejected_date":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar date_today \u003d new GlideDateTime();\nreturn date_today.toString().split(\u0027 \u0027)[0];","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>b4ffde970798f110eebefd908c1ed067</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b0ffde970798f110eebefd908c1ed066"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <order>4</order>
+        <parent_ui_id>25342935-bb49-458c-8b6e-16a3ae7d1dcc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>cb2c34870754b110eebefd908c1ed016</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <ui_id>cb7f2bd3-dedf-48d7-98df-a199039106e9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cb2c34870754b110eebefd908c1ed016"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cb2c34870754b110eebefd908c1ed016</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>432c34870754b110eebefd908c1ed019</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <value>x_1058161_cloudnat_service_management</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cb2c34870754b110eebefd908c1ed016</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>8f2c34870754b110eebefd908c1ed018</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <value>status=20^approved_rejected_date=fd-scripted^approved_by=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cb2c34870754b110eebefd908c1ed016"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cb2c34870754b110eebefd908c1ed016</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>0f2c34870754b110eebefd908c1ed018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cb2c34870754b110eebefd908c1ed016</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>872c34870754b110eebefd908c1ed018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>cb2c34870754b110eebefd908c1ed016</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>4b2c34870754b110eebefd908c1ed018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cb2c34870754b110eebefd908c1ed016^sys_idNOT IN4f0fb04b0754b110eebefd908c1ed04d"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>cb2c34870754b110eebefd908c1ed016</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"approved_by":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027コメントをご参考\u0027;","savedValue":""},"approved_rejected_date":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar date_today \u003d new GlideDateTime();\nreturn date_today.toString().split(\u0027 \u0027)[0];\n ","savedValue":""},"status":{"scriptActive":false,"savedValue":"20"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:49:26</sys_created_on>
+        <sys_id>4f0fb04b0754b110eebefd908c1ed04d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cb2c34870754b110eebefd908c1ed016"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=002d04470790b110eebefd908c1ed0e8^sys_idNOT IN30ffde970798f110eebefd908c1ed060,3bc1a4cb07d0b110eebefd908c1ed05b,872c34870754b110eebefd908c1ed002"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">74ffde970798f110eebefd908c1ed05f</block>
+        <comment>承認されなかったとき、レコードを更新</comment>
+        <connected_to>25342935-bb49-458c-8b6e-16a3ae7d1dcc</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>40902001-d63b-4d58-b73f-229170079eec</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-02 08:31:18</sys_created_on>
+        <sys_id>30ffde970798f110eebefd908c1ed060</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <ui_id>f23a6614-9825-4777-9a6b-5bc10c090170</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=30ffde970798f110eebefd908c1ed060"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=30ffde970798f110eebefd908c1ed060"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=30ffde970798f110eebefd908c1ed060"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7fc1a4cb07d0b110eebefd908c1ed05a</block>
+        <comment>新規作成レコードのとき、フロー起動</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>3bc1a4cb07d0b110eebefd908c1ed05b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <ui_id>40902001-d63b-4d58-b73f-229170079eec</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3bc1a4cb07d0b110eebefd908c1ed05b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3bc1a4cb07d0b110eebefd908c1ed05b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>ffc1a4cb07d0b110eebefd908c1ed05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <value>new record check</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3bc1a4cb07d0b110eebefd908c1ed05b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3bc1a4cb07d0b110eebefd908c1ed05b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>7fc1a4cb07d0b110eebefd908c1ed05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.status}}=10</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3bc1a4cb07d0b110eebefd908c1ed05b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:41:42</sys_created_on>
+        <sys_id>77c1a4cb07d0b110eebefd908c1ed05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:41:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3bc1a4cb07d0b110eebefd908c1ed05b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3bc1a4cb07d0b110eebefd908c1ed05b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cb2c34870754b110eebefd908c1ed001</block>
+        <comment>承認されたとき、レコードを更新</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CloudNative Flow">002d04470790b110eebefd908c1ed0e8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>40902001-d63b-4d58-b73f-229170079eec</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>872c34870754b110eebefd908c1ed002</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-02 08:38:20</sys_updated_on>
+        <ui_id>25342935-bb49-458c-8b6e-16a3ae7d1dcc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=872c34870754b110eebefd908c1ed002"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>872c34870754b110eebefd908c1ed002</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>c32c34870754b110eebefd908c1ed012</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <value>approval result check</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=872c34870754b110eebefd908c1ed002"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>872c34870754b110eebefd908c1ed002</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>432c34870754b110eebefd908c1ed012</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{c3c515b5-c29f-4d23-afaf-34e69f153189.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>872c34870754b110eebefd908c1ed002</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 06:36:53</sys_created_on>
+        <sys_id>8b2c34870754b110eebefd908c1ed011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 06:36:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=872c34870754b110eebefd908c1ed002"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=872c34870754b110eebefd908c1ed002"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8^sys_idNOT IN6800188b0790b110eebefd908c1ed096,a000188b0790b110eebefd908c1ed093,e800188b0790b110eebefd908c1ed099"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>6800188b0790b110eebefd908c1ed096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8_changed_fields_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>a000188b0790b110eebefd908c1ed093</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8_current_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 03:23:56</sys_created_on>
+        <sys_id>e800188b0790b110eebefd908c1ed099</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8_table_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 03:23:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_002d04470790b110eebefd908c1ed0e8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_002d04470790b110eebefd908c1ed0e8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_002d04470790b110eebefd908c1ed0e8"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=002d04470790b110eebefd908c1ed0e8"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=002d04470790b110eebefd908c1ed0e8"/>
+</record_update>

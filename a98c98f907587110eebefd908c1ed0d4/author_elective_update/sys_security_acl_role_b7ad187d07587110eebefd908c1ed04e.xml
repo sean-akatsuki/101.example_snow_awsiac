@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 07:11:16</sys_created_on>
+        <sys_id>b7ad187d07587110eebefd908c1ed04e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1058161_cloudnat_service_management.x_1058161_cloudnat.requester</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_security_acl display_value="x_1058161_cloudnat_service_management">3bad187d07587110eebefd908c1ed04b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b7ad187d07587110eebefd908c1ed04e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 07:15:40</sys_updated_on>
+        <sys_user_role display_value="x_1058161_cloudnat.requester" name="x_1058161_cloudnat.requester">0c0e9c7d07587110eebefd908c1ed08c</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</application>
+        <file_path/>
+        <instance_id>81a9d2a0dbc6d3c0536ad5b0cf9619e0</instance_id>
+        <instance_name>dev58858</instance_name>
+        <name>sys_security_acl_role_b7ad187d07587110eebefd908c1ed04e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-28 07:11:16</sys_created_on><sys_id>b7ad187d07587110eebefd908c1ed04e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1058161_cloudnat_service_management.x_1058161_cloudnat.requester</sys_name><sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package><sys_policy/><sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope><sys_security_acl display_value="x_1058161_cloudnat_service_management">3bad187d07587110eebefd908c1ed04b</sys_security_acl><sys_update_name>sys_security_acl_role_b7ad187d07587110eebefd908c1ed04e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-28 07:15:40</sys_updated_on><sys_user_role display_value="x_1058161_cloudnat.requester" name="x_1058161_cloudnat.requester">0c0e9c7d07587110eebefd908c1ed08c</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1300404209</payload_hash>
+        <record_name>x_1058161_cloudnat_service_management.x_1058161_cloudnat.requester</record_name>
+        <reverted_from/>
+        <source>d10dd0b507187110eebefd908c1ed039</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 07:15:40</sys_created_on>
+        <sys_id>10be98bd07587110eebefd908c1ed0b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1899b5a68fb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 07:15:40</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d4be98bd9d587110e3b77ce8a8e1dfb2</update_guid>
+        <update_guid_history>d4be98bd9d587110e3b77ce8a8e1dfb2:-1300404209,ffad187d44587110f616a2c3c58b2b68:1651582986</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1058161_cloudnat_service_management.x_1058161_cloudnat.requester">7020348b0714b110eebefd908c1ed0b4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 05:44:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>033a9849e6a5490c8806b9598ab92224</sys_id>
+        <sys_metadata>b7ad187d07587110eebefd908c1ed04e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1058161_cloudnat_service_management.x_1058161_cloudnat.requester</sys_name>
+        <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
+        <sys_parent display_value="x_1058161_cloudnat_service_management">3bad187d07587110eebefd908c1ed04b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
+        <sys_scope_delete display_value="">013ac8a5bd1046b4800382eebdc10b10</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_b7ad187d07587110eebefd908c1ed04e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_b7ad187d07587110eebefd908c1ed04e">10be98bd07587110eebefd908c1ed0b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 05:44:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

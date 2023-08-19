@@ -58,7 +58,7 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Approved-JobCompleted</label>
+            <label>Approved-JobSucceed</label>
             <language>en</language>
             <name>x_1058161_cloudnat_service_management</name>
             <sequence>30</sequence>
@@ -67,9 +67,9 @@
             <sys_created_on>2023-07-28 07:35:39</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>6</sys_mod_count>
+            <sys_mod_count>8</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-07-31 01:18:58</sys_updated_on>
+            <sys_updated_on>2023-08-19 08:11:04</sys_updated_on>
             <value>30</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -90,6 +90,44 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-07-31 01:18:51</sys_updated_on>
             <value>40</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancel</label>
+            <language>en</language>
+            <name>x_1058161_cloudnat_service_management</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-01 00:53:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-19 07:36:47</sys_updated_on>
+            <value>50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved-JobFailed</label>
+            <language>en</language>
+            <name>x_1058161_cloudnat_service_management</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-19 07:37:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-19 07:37:24</sys_updated_on>
+            <value>60</value>
         </sys_choice>
     </sys_choice>
 </record_update>

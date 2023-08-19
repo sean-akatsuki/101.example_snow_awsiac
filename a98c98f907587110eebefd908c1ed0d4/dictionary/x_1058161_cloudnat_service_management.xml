@@ -12,12 +12,12 @@
         <element label="コメント" max_length="4000" name="comment_his" type="journal"/>
         <element label="承認期待期日" max_length="40" name="dead_line" type="glide_date"/>
         <element label="申請者" max_length="40" name="requester" type="string"/>
-        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="申請ID" max_length="40" name="request_id" read_only="true" type="string" use_dynamic_default="true"/>
-        <element choice="1" label="サービス" max_length="40" name="sevice" type="choice">
+        <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="申請ID" max_length="40" name="request_id" read_only="true" type="string" use_dynamic_default="true"/>
+        <element choice="1" label="サービス" max_length="40" name="service" type="choice">
             <choice>
                 <element inactive_on_update="false" label="データベース" sequence="10" value="10"/>
-                <element inactive_on_update="false" label="BackEnd" sequence="20" value="20"/>
-                <element inactive_on_update="false" label="FrontEnd" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="Backend" sequence="20" value="20"/>
+                <element inactive_on_update="false" label="Frontend" sequence="30" value="30"/>
                 <element inactive_on_update="false" label="All" sequence="40" value="40"/>
             </choice>
         </element>
@@ -25,8 +25,10 @@
             <choice>
                 <element inactive_on_update="false" label="Ask for approval" sequence="10" value="10"/>
                 <element inactive_on_update="false" label="Approved-JobOnRunning" sequence="20" value="20"/>
-                <element inactive_on_update="false" label="Approved-JobCompleted" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="Approved-JobSucceed" sequence="30" value="30"/>
                 <element inactive_on_update="false" label="Rejected" sequence="40" value="40"/>
+                <element inactive_on_update="false" label="Cancel" sequence="50" value="50"/>
+                <element inactive_on_update="false" label="Approved-JobFailed" sequence="60" value="60"/>
             </choice>
         </element>
         <index name="index">

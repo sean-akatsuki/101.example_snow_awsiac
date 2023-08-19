@@ -3,9 +3,9 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>BR_BeforeInsert</name>
+        <name>BR_BeforeUpdate</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,50 +30,52 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	/*
-	if (current.ask_for_approver==''){ //承認者を指定していなかった場合、承認者を設定する
-		//var appr_query = new GlideRecord('sys_user_has_role'); //テーブル
-		//appr_query.addQuery('role', 'x_1058161_cloudnat.approver'); //x_1058161_cloudnat.approverロールのユーザを検索
-		//appr_query.query();
+	//when approved
+	if(current.status=='20'){
+		var rest_caller=new SI_AWSIaController();
+		param_service='';
+		param_action='';
 		
-		//while (appr_query.next()){ //user Idを設定
-		//	current.setValue('ask_for_approver','')
-		//	break;
-		//}
+		if(current.service=='10') {param_service='rds';}
+		else if(current.service=='20'){param_service='ecs';}
+		else if(current.service=='30'){param_service='cloudfront';}
+		else if(current.service=='40'){param_service='all';}
+		else{ return ;}
 		
+		if(current.action=='10') {param_action='stop';}
+		else if(current.action=='20') {param_action='start';}
+		else {return ;}		
 		
-		current.ask_for_approver='Not Assigned';	
+		var SUCCESS_CODE=['200','300','301','302'];
+		var response=rest_caller.callRESTwithParams(param_service,param_action);
+		if (SUCCESS_CODE.includes(response.reponse_code)){
+			current.status='30'; //approved-jobsucceed
+		}else{
+			current.status='60'; //approved-jobfailed
+		}
+
 	}
-	*/
-	if (current.dead_line == ''){ //期待期日を指定していなかった場合、3Business日後に設定する
-		var days = 3;
-		var creat= new GlideDateTime(current.sys_created_on);  // created date
-		gs.info('====='+creat.toString());
-		var dur = new GlideDuration(60 * 60 * 8 * 1000 * days); //calculate duration of three days
-		var schedule = new GlideSchedule('08fcd0830a0a0b2600079f56b1adb9ae'); // Use the Existing 8-5 weekday scheues.
-		var updatedays = schedule.add(creat, dur); 
-		gs.info('======='+updatedays.toString());
-		current.dead_line = updatedays;
-	}
+	
+	
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-07-31 01:46:57</sys_created_on>
+        <sys_created_on>2023-08-07 08:40:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>07ee66ea075c3110eebefd908c1ed083</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>BR_BeforeInsert</sys_name>
+        <sys_id>d4311c4507283110eebefd908c1ed08a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>BR_BeforeUpdate</sys_name>
         <sys_overrides/>
         <sys_package display_value="CloudNative Iac Management" source="x_1058161_cloudnat">a98c98f907587110eebefd908c1ed0d4</sys_package>
         <sys_policy/>
         <sys_scope display_value="CloudNative Iac Management">a98c98f907587110eebefd908c1ed0d4</sys_scope>
-        <sys_update_name>sys_script_07ee66ea075c3110eebefd908c1ed083</sys_update_name>
+        <sys_update_name>sys_script_d4311c4507283110eebefd908c1ed08a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-01 02:55:29</sys_updated_on>
+        <sys_updated_on>2023-08-19 13:51:30</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=07ee66ea075c3110eebefd908c1ed083"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d4311c4507283110eebefd908c1ed08a"/>
 </record_update>
