@@ -22,16 +22,15 @@ AWS Lambda関数(Infrastructure As Code)でアプリケーションの基盤施�
 |approved_rejected_date|Date|承認・拒否日付|
 |comment_his|Journal|コメント|
 
-Choice型設定  
-#### サービス  
+#### Choice型-サービス  
 - データベース
 - FrontEnd
 - BackEnd
 - All
-#### アクション
+#### Choice型-アクション
 - 起動
 - 停止
-#### ステータス
+#### Choice型-ステータス
 - Ask for Approval
 - Approved-JobOnRunning
 - Approved-JobSucceed
@@ -49,4 +48,8 @@ Choice型設定
 #### Form  
 ![cloudIac_form](https://github.com/sean-akatsuki/101.example_snow_awsiac/assets/18321490/46080593-59d2-4fd9-8af5-283374a07fde)
 
+## 2.4 権限
+- 申込者(user):サービスの申込者
+- 承認者(approver):申請されたサービスの承認・拒否を行う
 
+ 
